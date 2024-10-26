@@ -1,0 +1,122 @@
+
+.skill h5{
+    color: aliceblue !important;
+}
+
+.progress .progress-bar{
+   border: solid none;
+    animation: animate-positive 2s;
+    background-color: #08d565;
+
+}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+@keyframes animate-positive{
+    0% { width: 0%; }
+}
+.progress-container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .progress-bar{
+    background-color: #08d565;
+  }
+  .progress{
+    height: 15px;
+  }
+  /* وضع النسبة فوق الشريط */
+  .progress-label {
+    position: absolute;
+    top: -25px; /* لتحديد المسافة فوق الشريط */
+   right: 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+  }
+/*  */
+/* .award-item-2 {
+    box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.04);
+    -webkit-border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
+    margin: 0 auto 30px;
+} */
+.award-item .award-thumb {
+    background: #201d3a;
+    /* width: 315px; */
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+
+}
+.award-item {
+    background: #272440;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) and (max-width: 575px) {
+    .award-item .award-thumb .cont {
+        font-size: 40px;
+    }
+}
+
+/* .award-item .award-thumb .cont {
+    padding-left: 10px;
+
+    max-width: calc(100% - 80px);
+    font-size: 55px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+} */
+
+@media screen and (max-width: 400px) {
+    .award-item .award-content {
+        padding: 30px 15px;
+    }
+}
+.award-item .award-content .title {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+h4 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -4px;
+    color: aliceblue;
+}
+
+@media (max-width: 767px) {
+    .award-item .award-content {
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        border-radius: 0 0 10px 10px;
+        padding: 40px 30px;
+    }
+}
+@media (max-width: 767px) {
+    .award-item .award-thumb, .award-item .award-content {
+        width: 100%;
+    }
+}
+.award-item .award-content {
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    padding: 40px 50px;
+    background: url(../img/award-content.png) repeat-y left center;
+}
+
+@media screen and (max-width: 999px){
+    .award-item{
+        display:  block !important;
+    }
+   
+}

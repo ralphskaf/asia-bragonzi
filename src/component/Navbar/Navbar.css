@@ -1,0 +1,29 @@
+.navbar {
+  transition: background-color 0.3s;
+}
+
+.img-logo {
+  width: 120px;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+}
+.navbar-nav .nav-link:hover{
+  color: #08d565 !important;
+  transition: all 0.3s;
+}
+.navbar-nav .nav-link.active{
+  color: #08d565 !important;
+}
+@media only screen and (max-width: 999px) {
+  .navbar{
+    background-color: rgb(39 36 64) !important;
+   
+  }
+}

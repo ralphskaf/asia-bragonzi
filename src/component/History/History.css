@@ -1,0 +1,65 @@
+/* tabs */
+
+.bg{
+    background-image: url("../img/history-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /* margin-left: 20%; */
+    position: relative;
+height:100%;
+}
+.zin{
+   color: #fff;
+    background-color: #272440ee;
+    width: 100%;
+    height: 100%;
+    padding: 20px; /* إضافة padding للمحتوى */
+}
+ .tab-content {
+    width: 100%  !important; /* ملء كامل ارتفاع التبويبات */
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .zin {
+        padding: 15px; /* تقليل padding للأجهزة الصغيرة */
+    }
+}
+.bord{
+    border: 2px solid #272440;
+    border-radius: 5px;
+}
+.nav-tabs .nav-link.active{
+    color: #08d565 !important;
+   
+}
+.nav-tabs .nav-link{
+    line-height: 50px !important;
+    padding: 3px 5px 0 !important;
+    min-width: 160px !important;
+    text-align: center !important;
+    margin: 10px;
+    color: #ffffff !important;
+    border: 2px solid #272440 !important;
+    border-radius: 5px !important;
+    background: #201d3a !important;
+    font-family: "Josefin Sans", sans-serif !important;
+}
+.nav-tabs{
+    border-bottom: none !important;
+}
+.im{
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+    /* margin-left: 20%; */
+    float: right !important;
+}
+
+@media only screen and (max-width: 999px) {
+    .tab-content {
+        width: 100%  !important; 
+        height: 100%;
+    }
+}

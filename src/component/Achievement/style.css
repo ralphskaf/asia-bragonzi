@@ -1,0 +1,120 @@
+
+
+div[class*="col"]:nth-of-type(4n + 2) .info-inner {
+    background-color: #6718e9;
+}
+
+div[class*="col"]:nth-of-type(4n + 3) .info-inner {
+    background-color: #d025ce;
+}
+
+div[class*="col"]:nth-of-type(4n + 4) .info-inner {
+    background-color: #e97518;
+}
+
+.mt--103 {
+    margin-top: -103px;
+}
+
+.information-section {
+    position: relative;
+    z-index: 1;
+}
+
+.rounded-video {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .rounded-video {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rounded-video {
+        margin-left: 30px;
+    }
+}
+
+.rounded-video .thumb {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.rounded-video .thumb img {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .rounded-video .video-button {
+        width: 100px;
+        height: 100px;
+        line-height: 80px;
+        left: 70px;
+        top: calc(100% - 85px);
+        font-size: 50px;
+    }
+}
+.abs{
+    position: absolute;
+    width: 100%;
+   
+    left: 50%;
+    bottom: -130px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.abs img{
+    width: 50%;
+}
+.content{
+    padding-top: 20%;
+}
+.content p{
+    color: aliceblue;
+    font-size: 20px;
+}
+@media (max-width: 767px) {
+    .content p {
+        margin-bottom: 30px;
+    }
+}
+
+.content p {
+    margin-bottom: 40px;
+}
+@media (max-width: 575px) {
+    p {
+        font-size: 16px;
+    }
+}
+.counter-item{
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 36px;
+    line-height: 46px;
+}
+.counter-header{
+    position: relative;
+}
+.subtitle{
+    color: azure;
+}
+/* .counter-header::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    -webkit-border-radius: 15px 0 0 0;
+    -moz-border-radius: 15px 0 0 0;
+    border-radius: 15px 0 0 0;
+    left: 0;
+    top: 0;
+    background: #08d565;
+    z-index: -1;
+} */

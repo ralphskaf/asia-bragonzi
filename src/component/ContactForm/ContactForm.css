@@ -1,0 +1,208 @@
+.bg-2{
+    background-color:#191634 !important ;
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 200px 0 120px;
+    }
+}
+.custom-button {
+    
+    background-color: transparent;
+   
+  }
+  
+  
+.hero-section {
+    padding: 300px 0 130px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-section::before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    -webkit-border-radius: 0 0 75px 0;
+    -moz-border-radius: 0 0 75px 0;
+    border-radius: 0 0 75px 0;
+}
+
+.hero-section::before, .hero-section::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #272440;
+}
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hero-content {
+    text-align: center;
+}
+.hero-content .title {
+    text-transform: capitalize;
+    position: relative;
+    font-size: 42px;
+}
+@media (max-width: 575px) {
+    .hero-content .title::before {
+        font-size: 100px;
+    }
+}
+@media (max-width: 991px) {
+    .hero-content .title::before {
+        font-size: 150px;
+    }
+}
+.hero-content .title::before {
+    content: attr(data-bg);
+    position: absolute;
+    font-size: 205px;
+    color: transparent;
+    -webkit-text-stroke: rgba(255, 255, 255, 0.08) 1px;
+}
+
+.hero-content .title::before {
+    content: "";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+}
+.hero-content .title span {
+    position: relative;
+}
+.breadcrumb {
+    background: transparent;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+.breadcrumb li {
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.breadcrumb ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+.breadcrumb li span {
+    position: relative;
+    padding: 0 5px;
+    color: #ffffff;
+}
+.breadcrumb li a {
+    color: #ffffff;
+    display: inline-block;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    text-decoration: none;
+    padding-right: 10px;
+    background-color: transparent;
+}
+.breadcrumb li span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 49%;
+    left: 0;
+    display: block;
+    background: #08d565;
+}
+.hero-section::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    -webkit-border-radius: 0 0 0 75px;
+    -moz-border-radius: 0 0 0 75px;
+    border-radius: 0 0 0 75px;
+}
+
+.hero-section::before, .hero-section::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #272440;
+}
+/*  */
+
+.contact-info-item{
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-info-content .title{
+    text-align: center;
+} 
+
+/* input */
+@media (max-width: 991px) {
+     input {
+        height: 70px;
+    }
+}
+ input {
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 50px;
+    padding: 30px;
+    color: #ffffff;
+    width: 100%;
+}
+.contact-form-group {
+    margin-bottom: 30px;
+}
+ textarea {
+    /* padding: 30px; */
+    height: 80px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+margin-top: 30px !important;
+}
+.contact-info-content ul li {
+    color: #ffffff;
+}
