@@ -10,7 +10,8 @@ const Navbar = () => {
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > 50) {
-      setBgColor("#191634"); // اللون عند التمرير
+      setBgColor("#007294");
+      // setBgColor("#191634"); // اللون عند التمرير
     } else {
       setBgColor("transparent"); // اللون الافتراضي
     }
@@ -38,7 +39,15 @@ const Navbar = () => {
       <div className="container-fluid py-2">
         <div className="navbar-brand">
           <NavLink className="img-logo" to="/">
-            <img src={logo} alt="CoolBrand" className="w-100" />
+            <img
+              src={logo}
+              alt="CoolBrand"
+              className="w-100"
+              style={{
+                width: "40px",
+                height: "40px",
+              }}
+            />
           </NavLink>
         </div>
 

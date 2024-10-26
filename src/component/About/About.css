@@ -146,7 +146,7 @@
 }
 /* tabs */
 .bg {
-  background-image: url("../img/history-bg.jpg");
+  /* background-image: url("../img/history-bg.jpg"); */
   background-position: center;
   background-size: cover;
   width: 100%;

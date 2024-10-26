@@ -1,9 +1,9 @@
 import React from "react";
 import "../About/About.css";
 import { FaAngleUp } from "react-icons/fa";
-import first_icon from "../../assets/icon-6.png";
-import second_icon from "../../assets/icon-4.png";
-import third_icon from "../../assets/icon-5.png";
+import first_icon from "../../assets/biography.png";
+import second_icon from "../../assets/stats.png";
+import third_icon from "../../assets/club.png";
 import imgp3 from "../img/img-7.jpg";
 import History from "./../History/History";
 
@@ -16,14 +16,16 @@ export default function About() {
     <>
       <section className="about-section padding-top oh padding-bottom px-5">
         <div className="container-fluid py-5 px-4">
-          <div className="about-me">
+          {/* <div className="about-me"> */}
+          <div className="">
             <div className="row align-items-center">
               <div className="col-md-4">
                 <h2 className="title py-4">
                   <span className="font-s40">
-                    <span className="relative-span mainColor">About</span>
+                    {/* <span className="relative-span mainColor">About</span> */}
+                    <span className="mainColor">ABOUT ME</span>
                   </span>
-                  <span>Me</span>
+                  {/* <span>Me</span> */}
                 </h2>
               </div>
               <div className="col-md-8">
@@ -50,7 +52,11 @@ export default function About() {
                     data-aos="fade-up"
                   >
                     <div className="img-icon">
-                      <img src={first_icon} alt="" />
+                      <img
+                        src={first_icon}
+                        alt=""
+                        style={{ width: "64px", height: "64px" }}
+                      />
                     </div>
                     <div className="content-text px-3">
                       <h6>Biography</h6>
@@ -63,7 +69,11 @@ export default function About() {
                     data-aos="fade-up"
                   >
                     <div className="img-icon">
-                      <img src={second_icon} alt="" />
+                      <img
+                        src={second_icon}
+                        style={{ width: "64px", height: "64px" }}
+                        alt=""
+                      />
                     </div>
                     <div className="content-text px-3">
                       <h6>Stats</h6>
@@ -79,7 +89,11 @@ export default function About() {
                     data-aos="fade-up"
                   >
                     <div className="img-icon">
-                      <img src={third_icon} alt="" />
+                      <img
+                        src={third_icon}
+                        style={{ width: "64px", height: "64px" }}
+                        alt=""
+                      />
                     </div>
                     <div className="content-text px-3">
                       <h6>Clubs</h6>
@@ -99,7 +113,7 @@ export default function About() {
                         src={imgp3}
                         alt=""
                         className="img-fluid"
-                        style={{ maxHeight: "600px" }}
+                        style={{ maxHeight: "600px", borderRadius: "10px" }}
                       />
                     </div>
                   </div>

@@ -20,6 +20,10 @@
   line-height: 30px;
 }
 
+.home-font {
+  font-size: 60px;
+}
+
 .my-text-Sans {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -28,7 +32,8 @@
 
 /* ---------- */
 body {
-  background: #191634;
+  /* background: #191634; */
+  background-color: #007294;
   font-family: "Josefin Sans", sans-serif;
   /* padding-top: 95px; */
   color: #fff;
@@ -51,11 +56,12 @@ p {
   /* line-height: 30px; */
 }
 .master-layout {
-  background-image: url("assets/banner-bg.jpg");
+  /* background-image: url("assets/banner-bg.jpg"); */
   background-position: center center;
   background-size: cover;
   width: 100%;
   height: auto;
+  background-color: #007294;
 }
 /* HOME */
 .home-section {
@@ -95,6 +101,9 @@ p {
     font-size: 40px;
     line-height: 44px;
   }
+  .home-font {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -106,7 +115,8 @@ p {
 /* About & History*/
 .about-section,
 .history-section {
-  background-color: #272440;
+  /* background-color: #272440; */
+  background-color: #007294;
 }
 
 .relative-span {
@@ -126,7 +136,8 @@ p {
 }
 .brdr {
   height: 1px;
-  background-color: #373355;
+  /* background-color: #373355; */
+  background-color: #c9dc84;
 }
 /*information-section  */
 .information-item {
@@ -140,16 +151,20 @@ p {
   overflow: hidden;
   padding: 40px 30px 35px;
   border-radius: 10px;
-  background-color: #f83097;
+  /* background-color: #f83097; */
+  background-color: #c9dc84;
 }
 div[class*="col"]:nth-of-type(4n + 2) .info-inner {
-  background-color: #6718e9;
+  /* background-color: #6718e9; */
+  background-color: #a3d2cb;
 }
 div[class*="col"]:nth-of-type(4n + 3) .info-inner {
-  background-color: #d025ce;
+  /* background-color: #d025ce; */
+  background-color: #9f8b8d;
 }
 div[class*="col"]:nth-of-type(4n + 4) .info-inner {
-  background-color: #e97518;
+  /* background-color: #e97518; */
+  background-color: #e59aa4;
 }
 .information-item .right-icon {
   font-size: 160px;
@@ -175,7 +190,7 @@ div[class*="col"]:nth-of-type(4n + 4) .info-inner {
   font-family: "Josefin Sans", sans-serif;
 }
 .info {
-  color: #ddd;
+  color: #ffff;
 }
 @media screen and (max-width: 374px) {
   .h1 {
@@ -196,7 +211,7 @@ div[class*="col"]:nth-of-type(4n + 4) .info-inner {
   right: 30px;
   border-radius: 5px;
 
-  background: #c9dc84;
+  background: #a3d2cb;
   text-align: center;
   font-size: 16px;
 }

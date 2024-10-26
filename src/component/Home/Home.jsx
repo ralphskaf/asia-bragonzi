@@ -1,5 +1,6 @@
 import React from "react";
-import img13 from "../img/img-4.png";
+// import img13 from "../img/img-4.png";
+import img13 from "../img/home-pic.png";
 import { Link } from "react-router-dom";
 import icon1 from "../img/icon.png";
 import icon3 from "../img/icon-1.png";
@@ -22,9 +23,11 @@ export default function Home() {
                 data-aos="fade-right"
               >
                 <div className="px-5 pb-md-5 pb-0">
-                  <h1 className="text-white my-text-h font pb-md-5">
-                    <span className="text-theme d-block mainColor">I am</span>
-                    Asia Bragonzi
+                  <h1 className="text-white my-text-h home-font  pb-md-5">
+                    <span className="text-theme d-block mainColor">
+                      HELLO THERE!
+                    </span>
+                    It's Asia Bragonzi
                   </h1>
                   <Link to="/about" className="custom-button">
                     My Career
