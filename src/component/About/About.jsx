@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <>
-      <section className="about-section padding-top oh padding-bottom px-5">
+      <section className="about-section padding-top oh padding-bottom px-md-5">
         <div className="container-fluid py-5 px-4">
           {/* <div className="about-me"> */}
           <div className="">

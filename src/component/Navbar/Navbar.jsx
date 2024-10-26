@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom"; // استخدم NavLink بدلاً �
 import "../Navbar/Navbar.css"; // تأكد من أن المسار صحيح
 import logo from "../../assets/logo.png"; // تأكد من وجود الصورة في المسار المحدد
 import { FaBarsStaggered } from "react-icons/fa6";
+import { useVideo } from "../../Layout/VideoContext";
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState("transparent");
+  const { isVideoOpen } = useVideo();
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -18,11 +20,15 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    if (!isVideoOpen) {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setBgColor("transparent");
+    }
+  }, [isVideoOpen]);
 
   return (
     <nav

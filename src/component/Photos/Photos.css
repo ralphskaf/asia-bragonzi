@@ -94,7 +94,7 @@
   position: absolute;
   top: 50px;
   right: 10px;
-  background: #c9dc84;
+  background: rgb(0, 114, 148);
   color: white;
   border: none;
   padding: 10px 15px;
@@ -104,7 +104,7 @@
 }
 
 .close-button:hover {
-  background: #06b558;
+  background: rgba(0, 113, 148, 0.831);
 }
 @media only screen and (max-width: 300px) {
   .close-button {
@@ -197,6 +197,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
