@@ -30,7 +30,7 @@ const BannerShape = ({ customLeft }) => {
           position: "absolute",
           width: "1px",
           height: "30px",
-          background: "#08d565",
+          background: "#c9dc84",
           top: 0,
         }}
         initial={{ top: "0%" }}

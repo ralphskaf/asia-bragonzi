@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <>
-      <section className="about-section padding-top oh padding-bottom px-4">
+      <section className="about-section padding-top oh padding-bottom px-5">
         <div className="container-fluid py-5 px-4">
           <div className="about-me">
             <div className="row align-items-center">
@@ -38,9 +38,9 @@ export default function About() {
                   <p>
                     She is a center forward who is very active in the team's
                     offensive actions and has a remarkable eye for goal, as well
-                    as good penalty-taking skills.[2] Thanks to her
-                    characteristics and potential, she is considered among the
-                    best Italian and European talents of her generation.[2][3]
+                    as good penalty-taking skills.Thanks to her characteristics
+                    and potential, she is considered among the best Italian and
+                    European talents of her generation.
                   </p>
                 </div>
                 <div className="about-icons">

@@ -33,7 +33,8 @@ const Navbar = () => {
         width: "100%",
         zIndex: 1000,
       }}
-      className="navbar navbar-expand-lg px-5">
+      className="navbar navbar-expand-lg px-5"
+    >
       <div className="container-fluid py-2">
         <div className="navbar-brand">
           <NavLink className="img-logo" to="/">
@@ -45,7 +46,8 @@ const Navbar = () => {
           type="button"
           className="navbar-toggler text-white"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse">
+          data-bs-target="#navbarCollapse"
+        >
           <FaBarsStaggered />
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
@@ -57,12 +59,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/about">
-                About us
+                About
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/achievement">
-              achievement
+                achievement
               </NavLink>
             </li>
             <li className="nav-item">
@@ -72,7 +74,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/photos">
-                only video
+                Media
               </NavLink>
             </li>
             <li className="nav-item">
