@@ -215,3 +215,11 @@ div[class*="col"]:nth-of-type(4n + 4) .info-inner {
   text-align: center;
   font-size: 16px;
 }
+
+.scrollBtn {
+  cursor: pointer;
+}
+
+.scrollBtn .fa-angle-up {
+  color: #007294;
+}

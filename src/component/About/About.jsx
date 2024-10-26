@@ -128,9 +128,9 @@ export default function About() {
       </section>
 
       <div className="scrollBtn" onClick={scrollToTop}>
-        <i>
-          <FaAngleUp />
-        </i>
+        <div className="scrollBtn" onClick={scrollToTop}>
+          <FaAngleUp className="fa-angle-up" />
+        </div>
       </div>
     </>
   );

@@ -159,14 +159,16 @@ export default function Photos() {
 
       {/*  */}
       <div className="py-5 container">
-        <div className="Gallery">
+        {/* <div className="Gallery"> */}
+        <div className="">
           <div className="row align-items-center">
             <div className="col-md-4">
               <h2 className="title py-4 ">
                 <span className="font-s40">
-                  <span className="relative-span mainColor">Gallery </span>
-                </span>{" "}
-                <span>Photos</span>
+                  {/* <span className="relative-span mainColor">Gallery </span> */}
+                  <span className="mainColor">GALLERY </span>
+                </span>
+                {/* <span>Photos</span> */}
               </h2>
             </div>
             <div className="col-md-6">

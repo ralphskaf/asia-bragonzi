@@ -12,8 +12,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #272440;
-  opacity: 0.97;
+  background: #005873;
+  opacity: 0.9;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -32,7 +32,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #3b3952;
+  /* background-color: #3b3952; */
+  background-color: #c9dc84 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +43,7 @@
 
 .icon-circle i {
   font-size: 24px;
-  color: #ffffff;
+  color: #005873 !important;
 }
 
 /* تأثير عند تمرير الماوس */
