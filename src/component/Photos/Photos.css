@@ -58,23 +58,12 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .wh {
-    height: 30vh;
-  }
-}
-
 @media only screen and (max-width: 480px) {
   .wh {
-    height: 25vh;
+    height: 40vh;
   }
 }
 
-@media only screen and (max-width: 314px) {
-  .wh {
-    height: 20vh;
-  }
-}
 /*  */
 
 /* video */
