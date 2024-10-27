@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom"; // استخدم NavLink بدلاً من Link
-import "../Navbar/Navbar.css"; // تأكد من أن المسار صحيح
-import logo from "../../assets/logo.png"; // تأكد من وجود الصورة في المسار المحدد
+import { NavLink, useLocation } from "react-router-dom";
+import "../Navbar/Navbar.css";
+import logo from "../../assets/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useVideo } from "../../Layout/VideoContext";
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState("transparent");
   const { isVideoOpen } = useVideo();
+  const location = useLocation();
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > 50) {
       setBgColor("#007294");
-      // setBgColor("#191634"); // اللون عند التمرير
     } else {
-      setBgColor("transparent"); // اللون الافتراضي
+      setBgColor("transparent");
     }
   };
 
@@ -29,6 +29,15 @@ const Navbar = () => {
       setBgColor("transparent");
     }
   }, [isVideoOpen]);
+
+  useEffect(() => {
+    const navbarCollapse = document.getElementById("navbarCollapse");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+
+    if (navbarCollapse.classList.contains("show")) {
+      navbarToggler.click();
+    }
+  }, [location]);
 
   return (
     <nav
@@ -79,12 +88,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/achievement">
-                achievement
+                Achievement
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact">
-                Contact us
+                Contact Us
               </NavLink>
             </li>
             <li className="nav-item">

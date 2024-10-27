@@ -55,7 +55,7 @@
 /* لجعل الحاوية responsive */
 @media (max-width: 600px) {
   .icon-container {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 

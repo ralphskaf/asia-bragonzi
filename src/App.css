@@ -45,9 +45,10 @@ p {
   color: rgb(221, 221, 221);
 }
 .Outlet {
-  padding-top: 10rem;
+  padding-top: 4rem;
   padding-bottom: 1.25rem;
-  background-color: #272440;
+  /* background-color: #272440; */
+  background-color: #007294;
 }
 /* masterlayout */
 .my-text-h {
