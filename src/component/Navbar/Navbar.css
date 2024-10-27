@@ -21,8 +21,8 @@
 .navbar-nav .nav-link.active {
   color: #c9dc84 !important;
 }
-/* @media only screen and (max-width: 999px) {
+@media only screen and (max-width: 999px) {
   .navbar {
-    background-color: rgb(39 36 64) !important;
+    background-color: #007294 !important;
   }
-} */
+}
