@@ -36,7 +36,7 @@ const History = () => {
               >
                 <Tab eventKey="INT Career" title="INT Career">
                   <div className="bg">
-                    <div className="zin w-100 h-100 p-5">
+                    <div className="zin w-100 h-100 p-md-5 p-3">
                       <h4>
                         Asia Bragonzi has represented Italy at various youth
                         levels in international football.
@@ -74,7 +74,7 @@ const History = () => {
 
                 <Tab eventKey="Personal Life" title="Personal Life">
                   <div className="bg">
-                    <div className="zin p-5 w-100 h-100">
+                    <div className="zin p-md-5 p-3 w-100 h-100">
                       <h4>
                         Information about Asia Bragonzi's personal life is
                         relatively limited, as athletes often keep their private
@@ -106,7 +106,7 @@ const History = () => {
                 </Tab>
                 <Tab eventKey="Club Career" title="Club Career">
                   <div className="bg">
-                    <div className="zin p-5 w-100 h-100 pading">
+                    <div className="zin p-md-5 p-3 w-100 h-100 pading">
                       <h4>
                         sia Bragonzi has had a notable club career across
                         several Italian football clubs
