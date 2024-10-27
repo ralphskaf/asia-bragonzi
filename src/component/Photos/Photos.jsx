@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-// import "../Home/Home.css"
+import React, { useState, useRef } from "react";
+import "swiper/css";
+import "swiper/css/bundle";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
+
 import imgp2 from "../img/img-6.jpg";
 import imgp3 from "../img/img-17.jpg";
 import imgp4 from "../img/img-16.jpg";
@@ -13,87 +14,52 @@ import imgp8 from "../img/img-5.jpg";
 import imgp9 from "../img/img-11.jpg";
 import imgp10 from "../img/img-13.jpg";
 import imgp11 from "../img/img-15.jpg";
-// import imgp12 from '../img/video-bg-2.jpg'
 import imgp12 from "../img/video-image.webp";
-import video from "../img/video.mp4";
 import video2 from "../../assets/Download.mp4";
 import { useVideo } from "../../Layout/VideoContext";
-
 import { FaPlay, FaAngleUp } from "react-icons/fa";
 import "../Photos/Photos.css";
+
 export default function Photos() {
-  // حالة للتحكم في ظهور الفيديو
+  const { isVideoOpen, setIsVideoOpen } = useVideo();
+  const videoRef = useRef(null);
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
-  const { isVideoOpen, setIsVideoOpen } = useVideo();
-  const videoRef = useRef(null); // إنشاء مرجع للفيديو
 
-  // دالة لفتح الفيديو
   const openVideo = () => {
     setIsVideoOpen(true);
   };
 
-  // دالة لإغلاق الفيديو
   const closeVideo = () => {
     setIsVideoOpen(false);
     if (videoRef.current) {
-      videoRef.current.pause(); // إيقاف الفيديو
-      videoRef.current.currentTime = 0; // إعادة تعيين الفيديو إلى البداية
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
     }
   };
 
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  const images = [
+    imgp2,
+    imgp10,
+    imgp7,
+    imgp3,
+    imgp4,
+    imgp5,
+    imgp6,
+    imgp9,
+    imgp8,
+  ];
+
   return (
     <>
-      {/*  */}
-
       <section className="py-5">
         <div className="container">
           <div className="position-relative">
             <img
               src={imgp12}
               alt="Click to watch video"
-              // className="w-100 shadow"
               className="img-fluid"
               style={{
                 borderRadius: "10px",
@@ -115,7 +81,6 @@ export default function Photos() {
             </div>
           </div>
 
-          {/* نافذة الفيديو */}
           {isVideoOpen && (
             <div
               style={{
@@ -131,12 +96,11 @@ export default function Photos() {
                 zIndex: 20,
               }}
             >
-              {/* فيديو */}
               <div
                 style={{ position: "relative", width: "100%", height: "80%" }}
               >
                 <video
-                  ref={videoRef} // ربط المرجع
+                  ref={videoRef}
                   width="100%"
                   height="100%"
                   controls
@@ -146,8 +110,6 @@ export default function Photos() {
                   <source src={video2} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-
-                {/* زر إغلاق الفيديو */}
                 <button onClick={closeVideo} className="close-button">
                   X
                 </button>
@@ -157,18 +119,14 @@ export default function Photos() {
         </div>
       </section>
 
-      {/*  */}
       <div className="py-5 container">
-        {/* <div className="Gallery"> */}
         <div className="">
           <div className="row align-items-center">
             <div className="col-md-4">
-              <h2 className="title py-4 ">
+              <h2 className="title py-4">
                 <span className="font-s40">
-                  {/* <span className="relative-span mainColor">Gallery </span> */}
                   <span className="mainColor">GALLERY </span>
                 </span>
-                {/* <span>Photos</span> */}
               </h2>
             </div>
             <div className="col-md-6">
@@ -177,37 +135,48 @@ export default function Photos() {
           </div>
         </div>
         <div className="slider-container">
-          <Slider {...settings}>
-            <div className="px-3">
-              <img src={imgp10} alt="" className="wh " />
-            </div>
-            <div>
-              <img src={imgp11} alt="" className="wh " />
-            </div>
-            <div>
-              <img src={imgp3} alt="" className="wh " />
-            </div>
-            <div>
-              <img src={imgp4} alt="" className="wh " />
-            </div>
-            <div>
-              <img src={imgp5} alt="" className="wh " />
-            </div>
-            <div>
-              <img src={imgp6} alt="" className="wh " />
-            </div>
-            <div>
-              <img src={imgp9} alt="" className="wh  " />
-            </div>
-            <div>
-              <img src={imgp8} alt="" className="wh " />
-            </div>
-          </Slider>
+          <Swiper
+            modules={[Autoplay, FreeMode]}
+            spaceBetween={50}
+            speed={3000}
+            slidesPerView={3}
+            // onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
+            loop={true}
+            freeMode={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              // when window width is >= 320px
+              320: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              // when window width is >= 768px
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              // when window width is >= 1200px
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+          >
+            {images.map((image, index) => (
+              <SwiperSlide key={index}>
+                <img src={image} alt={`Slide ${index + 1}`} className="wh" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       <div className="scrollBtn" onClick={scrollToTop}>
         <i>
-          <FaAngleUp />{" "}
+          <FaAngleUp />
         </i>
       </div>
     </>

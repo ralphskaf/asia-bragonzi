@@ -23,7 +23,7 @@ export default function About() {
                 <h2 className="title py-4">
                   <span className="font-s40">
                     {/* <span className="relative-span mainColor">About</span> */}
-                    <span className="mainColor">ABOUT ME</span>
+                    <span className="mainColor">ABOUT ASIA</span>
                   </span>
                   {/* <span>Me</span> */}
                 </h2>
@@ -35,7 +35,7 @@ export default function About() {
           </div>
           <div className="about-content">
             <div className="row">
-              <div className="col-md-6 col-12 pt-md-5 pt-0">
+              <div className="col-md-6 col-12">
                 <div className="content-text">
                   <p>
                     She is a center forward who is very active in the team's
