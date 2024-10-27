@@ -33,7 +33,7 @@
   top: 0;
   height: 100%;
   width: 50%;
-  background: #272440;
+  background: #005873 !important;
 }
 .hero-section .container {
   position: relative;
@@ -54,6 +54,15 @@
   text-transform: capitalize;
   position: relative;
   font-size: 42px;
+}
+
+.phone-link {
+  color: #c9dc84;
+  /* text-decoration: none; */
+}
+
+.phone-link:hover {
+  color: #c9dc84ec; /* Optional: Change color on hover */
 }
 @media (max-width: 575px) {
   .hero-content .title::before {
@@ -176,13 +185,13 @@
   }
 }
 input {
-  background: transparent;
+  background: #005873;
   border-radius: 10px;
   box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid #005873;
   height: 50px;
   padding: 30px;
-  color: #ffffff;
+  color: #c9dc84;
   width: 100%;
 }
 .contact-form-group {
@@ -191,15 +200,20 @@ input {
 textarea {
   /* padding: 30px; */
   height: 80px;
-  background: transparent;
+  background: #005873;
   border-radius: 10px;
   box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #ffffff;
+  border: 1px solid #005873;
+  color: #c9dc84;
   padding: 10px;
   width: 100%;
   margin-top: 30px !important;
 }
 .contact-info-content ul li {
-  color: #ffffff;
+  color: #c9dc84;
+}
+
+.custom-placeholder::placeholder {
+  color: #007294;
+  opacity: 1;
 }

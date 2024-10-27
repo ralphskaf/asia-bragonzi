@@ -60,8 +60,8 @@ export default function ContactForm() {
       });
   };
   return (
-    <div className="bg-2">
-      <section>
+    <div className="">
+      {/* <section>
         <section className="hero-section">
           <a href="#about" className="banner-icon">
             <i className="flaticon-down-arrow" />
@@ -82,12 +82,12 @@ export default function ContactForm() {
             </div>
           </div>
         </section>
-      </section>
+      </section> */}
 
       <>
         {/* === Contact Section === */}
-        <div className="contact-info-section  py-5" id="about">
-          <div className="container">
+        <div className="contact-info-section  pt-5 pb-3" id="about">
+          <div className="container pt-5">
             <div className="row mb-30-none justify-content-center">
               <div className="col-lg-4 col-md-6">
                 <div className="contact-info-item">
@@ -97,8 +97,11 @@ export default function ContactForm() {
                   <div className="contact-info-content">
                     <h6 className="title mx-4">Phone</h6>
                     <ul>
-                      <li>39</li>
-                      <li>+</li>
+                      <li>
+                        <a href="tel:+393703415503" className="phone-link">
+                          +393703415503
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -111,7 +114,7 @@ export default function ContactForm() {
                   <div className="contact-info-content">
                     <h6 className="title mx-4">Address</h6>
                     <ul>
-                      <li>Italia</li>
+                      <li>Sassuolo Italy</li>
                     </ul>
                   </div>
                 </div>
@@ -129,9 +132,10 @@ export default function ContactForm() {
               <div className="col-md-4">
                 <h2 className="title py-4 ">
                   <span className="font-s40">
-                    <span className="relative-span mainColor">With</span>
-                  </span>{" "}
-                  <span>Me</span>
+                    {/* <span className="relative-span mainColor">With</span> */}
+                    <span className="mainColor">CONTACT ME</span>
+                  </span>
+                  {/* <span>Me</span> */}
                 </h2>
               </div>
               <div className="col-md-6">
@@ -155,6 +159,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
+                className="custom-placeholder"
               />
             </div>
 
@@ -167,6 +172,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
+                className="custom-placeholder"
               />
             </div>
 
@@ -177,6 +183,7 @@ export default function ContactForm() {
                 onChange={handleInputChange}
                 placeholder="Message"
                 required
+                className="custom-placeholder"
               ></textarea>
             </div>
 

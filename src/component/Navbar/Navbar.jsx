@@ -91,11 +91,7 @@ const Navbar = () => {
                 Achievement
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
-                Contact Us
-              </NavLink>
-            </li>
+
             <li className="nav-item">
               <NavLink className="nav-link" to="/photos">
                 Media
@@ -104,6 +100,11 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/skills">
                 Skills
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">
+                Contact
               </NavLink>
             </li>
           </ul>
