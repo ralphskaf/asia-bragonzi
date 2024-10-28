@@ -137,9 +137,9 @@ export default function About() {
                         <li>Hellas Verona </li>
                         <li>Empoli </li>
                         <li>Sassuolo </li>
-                        <li>Hellas Verona </li>
+                        {/* <li>Hellas Verona </li>
                         <li>Pomigliano </li>
-                        <li>Sampdoria </li>
+                        <li>Sampdoria </li> */}
                       </ul>
                     </div>
                   </div>
