@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import icon1 from "../img/iconc-1.png";
-import icon2 from "../img/iconc-2.png";
+import icon1 from "../img/location.png";
+import icon2 from "../img/contact.png";
 import "../ContactForm/ContactForm.css";
 import { FaAngleUp } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
@@ -61,7 +61,11 @@ export default function ContactForm() {
             <div className="col-lg-4 col-md-6">
               <div className="contact-info-item">
                 <div className="contact-info-thumb">
-                  <img src={icon2} alt="contact" />
+                  <img
+                    src={icon2}
+                    style={{ width: "100px", height: "100px" }}
+                    alt="contact"
+                  />
                 </div>
                 <div className="contact-info-content">
                   <h6 className="title mx-4">Phone</h6>
@@ -78,7 +82,11 @@ export default function ContactForm() {
             <div className="col-lg-4 col-md-6">
               <div className="contact-info-item">
                 <div className="contact-info-thumb">
-                  <img src={icon1} alt="contact" />
+                  <img
+                    src={icon1}
+                    alt="contact"
+                    style={{ width: "100px", height: "100px" }}
+                  />
                 </div>
                 <div className="contact-info-content">
                   <h6 className="title mx-4">Address</h6>
