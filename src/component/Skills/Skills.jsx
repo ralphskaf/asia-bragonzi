@@ -173,11 +173,11 @@ export default function Skills() {
                 </h4>
                 <p>
                   The Women's Serie A, officially called the Women's Serie A
-                  eBay for sponsorship reasons,[1] is the top division of the
+                  eBay for sponsorship reasons,is the top division of the
                   Italian women's football championship, as well as the only one
                   belonging to the professional category, and has been managed,
                   since the 2018-2019 season, by Italian Football Federation
-                  (FIGC).[2] From the 2022-2023 season
+                  (FIGC). From the 2022-2023 season
                 </p>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function Skills() {
                 <h4 className="title">Coppa Italia: 1 Juventus: 2018-2019</h4>
                 <p>
                   The Italian Cup, officially called Coppa Italia Ferrovie dello
-                  Stato Italiane for sponsorship reasons,[1] is the Italian
+                  Stato Italiane for sponsorship reasons, is the Italian
                   national football cup reserved for women's football teams,
                   which is held under the aegis of the FIGC and is organized
                   annually by the division women's football of the same FIGC
@@ -222,11 +222,11 @@ export default function Skills() {
                 </h4>
                 <p>
                   The Supercoppa Italiana, officially called Supercoppa Ferrovie
-                  dello Stato Italiane for sponsorship reasons,[1] is a women's
+                  dello Stato Italiane for sponsorship reasons, is a women's
                   football competition established in 1997 which annually pits
                   the top two teams in Serie A and the two finalists of the
                   Italian Cup in a final phase with two semi-finals and a final
-                  on a neutral pitch. [2]
+                  on a neutral pitch.
                 </p>
               </div>
             </div>
@@ -244,15 +244,15 @@ export default function Skills() {
               </div>
               <div className="award-content">
                 <h4 className="title">
-                  Individuale Golden Girl: 1 Miglior italiana Under-21: 2020[15]
+                  Individuale Golden Girl: 1 Miglior italiana Under-21: 2020
                 </h4>
                 <p>
                   The European Golden Girl, often referred to simply as Golden
                   Girl, is a football award established by Tuttosport in 2022
                   and awarded every year to the best Under-21 footballer playing
-                  in the top flight of a European championship.[1] Since 2018,
-                  the Turin newspaper has rewarded the best Italian Under-21
-                  footballer.[1]
+                  in the top flight of a European championship. Since 2018, the
+                  Turin newspaper has rewarded the best Italian Under-21
+                  footballer.
                 </p>
               </div>
             </div>
