@@ -3,7 +3,7 @@ import "../Skills/Skills.css";
 import imgp3 from "../img/img-7.jpg";
 import { FaAngleUp } from "react-icons/fa";
 
-import img1 from "../img/01.png";
+import award from "../img/award.png";
 export default function Skills() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -160,16 +160,16 @@ export default function Skills() {
             >
               <div className="award-thumb">
                 <div className="thumb">
-                  <img src={img1} alt="award" />
+                  <img src={award} alt="award" className="award-icon" />
                 </div>
                 <div className="cont">
-                  <span>x</span>03
+                  <span>x</span>02
                 </div>
               </div>
               <div className="award-content">
                 <h4 className="title">
                   {" "}
-                  Campionato italiano:2 Juventus: 2018-2019, 2019-2020
+                  Campionato italiano | Juventus | 2018-2019, 2019-2020
                 </h4>
                 <p>
                   The Women's Serie A, officially called the Women's Serie A
@@ -187,14 +187,12 @@ export default function Skills() {
             >
               <div className="award-thumb">
                 <div className="thumb">
-                  <img src={img1} alt="award" />
+                  <img src={award} alt="award" className="award-icon" />
                 </div>
-                <div className="cont">
-                  <span>x</span>01
-                </div>
+                <div className="cont">{/* <span>x</span>01 */}</div>
               </div>
               <div className="award-content">
-                <h4 className="title">Coppa Italia: 1 Juventus: 2018-2019</h4>
+                <h4 className="title">Coppa Italia | Juventus | 2018-2019</h4>
                 <p>
                   The Italian Cup, officially called Coppa Italia Ferrovie dello
                   Stato Italiane for sponsorship reasons, is the Italian
@@ -210,15 +208,15 @@ export default function Skills() {
             >
               <div className="award-thumb px-lg-5">
                 <div className="thumb">
-                  <img src={img1} alt="award" />
+                  <img src={award} alt="award" className="award-icon" />
                 </div>
                 <div className="cont">
-                  <span>x</span>97
+                  <span>x</span>2
                 </div>
               </div>
               <div className="award-content">
                 <h4 className="title">
-                  Supercoppa italiana: 2 Juventus: 2019, 2023
+                  Supercoppa italiana | Juventus | 2018-2019, 2022-2023
                 </h4>
                 <p>
                   The Supercoppa Italiana, officially called Supercoppa Ferrovie
@@ -236,15 +234,13 @@ export default function Skills() {
             >
               <div className="award-thumb px-lg-5">
                 <div className="thumb">
-                  <img src={img1} alt="award" />
+                  <img src={award} alt="award" className="award-icon" />
                 </div>
-                <div className="cont">
-                  <span>x</span>97
-                </div>
+                <div className="cont">{/* <span>x</span>97 */}</div>
               </div>
               <div className="award-content">
                 <h4 className="title">
-                  Individuale Golden Girl: 1 Miglior italiana Under-21: 2020
+                  Individuale Golden Girl | Miglior italiana Under-21 | 2020
                 </h4>
                 <p>
                   The European Golden Girl, often referred to simply as Golden

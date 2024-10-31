@@ -77,6 +77,11 @@
     font-family: "Josefin Sans", sans-serif;
 } */
 
+.award-icon {
+  width: 150px;
+  height: 150px;
+}
+
 @media screen and (max-width: 400px) {
   .award-item .award-content {
     padding: 30px 15px;
