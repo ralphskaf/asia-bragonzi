@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       <section className="about-section padding-top oh padding-bottom px-md-5">
-        <div className="container-fluid py-5 px-1">
+        <div className="container py-5 px-1">
           <div className="">
             <div className="row align-items-center">
               <div className="col-md-4">
@@ -32,20 +32,18 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="about-content">
+          <div className="about-content container">
             <div className="row">
               <div className="col-md-6 col-12">
-                <div className="content-text px-3">
-                  <p>{t("biography_text")}</p>
-                </div>
+                <div className="px-3 my-text-Sans">{t("biography_text")}</div>
                 <div className="about-icons">
                   {/* first icon */}
                   <div
-                    className="d-flex align-items-center py-3 mb-3"
+                    className="d-flex align-items-center py-3"
                     data-aos="fade-up"
                   >
                     <div className="content-text px-2">
-                      <h6>
+                      <h6 className="f-22">
                         <img
                           src={first_icon}
                           alt=""
@@ -64,7 +62,7 @@ export default function About() {
                     data-aos="fade-up"
                   >
                     <div className="content-text px-3">
-                      <h6>
+                      <h6 className="f-22">
                         {" "}
                         <img
                           src={third_icon}
@@ -88,7 +86,7 @@ export default function About() {
               <div className="col-md-6 col-12 text-center">
                 <div className="about-image" data-aos="fade-up">
                   <div className="position-relative">
-                    <div className="">
+                    <div className="text-center">
                       <img
                         src={imgp3}
                         alt=""

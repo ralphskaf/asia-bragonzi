@@ -1,5 +1,6 @@
 .bg-ff {
-  background-image: url(../img/footer-bg.jpg);
+  /* background-image: url(../img/footer-bg.jpg); */
+  background-image: url("../img/history-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

@@ -74,6 +74,10 @@
   background: #fff;
 }
 
+.f-22 {
+  font-size: 22px !important;
+}
+
 @media screen and (max-width: 499px) {
   .about-area .item .icon {
     width: 50px;
