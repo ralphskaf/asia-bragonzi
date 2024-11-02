@@ -1,17 +1,16 @@
+// src/component/Home/Home.jsx
 import React from "react";
-// import img13 from "../img/img-4.png";
+import { useTranslation } from "react-i18next";
 import img13 from "../img/home-pic.png";
 import { Link } from "react-router-dom";
 import icon1 from "../img/icon.png";
 import icon3 from "../img/icon-1.png";
 import icon4 from "../img/icon-2.png";
 import icon5 from "../img/icon-3.png";
-import { FaAngleUp } from "react-icons/fa";
 
 export default function Home() {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="pt-5 z-2">
@@ -23,14 +22,14 @@ export default function Home() {
                 data-aos="fade-right"
               >
                 <div className="px-5 pb-md-5 pb-0">
-                  <h1 className="text-white my-text-h home-font  pb-md-5">
+                  <h1 className="text-white my-text-h home-font pb-md-5">
                     <span className="text-theme d-block mainColor">
-                      HELLO THERE!
+                      {t("hello")}
                     </span>
-                    It's Asia Bragonzi
+                    {t("its_me")}
                   </h1>
                   <Link to="/about" className="custom-button">
-                    My Career
+                    {t("my_career")}
                   </Link>
                 </div>
               </div>
@@ -56,11 +55,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="information-section mt--103 ">
+      <div className="information-section mt--103">
         <div className="container">
-          <div className="row justify-content-center mb-30-none ">
+          <div className="row justify-content-center mb-30-none">
             <div className="col-sm-6 col-xl-3">
-              <div className="information-item ">
+              <div className="information-item">
                 <div className="info-inner">
                   <div className="right-icon">
                     <img src={icon3} alt="" />
@@ -68,13 +67,13 @@ export default function Home() {
                   <div className="icon">
                     <img src={icon3} alt="" />
                   </div>
-                  <h5 className="title">Place of Birth</h5>
-                  <span className="info"> Italia</span>
+                  <h5 className="title">{t("place_of_birth")}</h5>
+                  <span className="info">{t("italia")}</span>
                 </div>
               </div>
             </div>
             <div className="col-sm-6 col-xl-3">
-              <div className="information-item ">
+              <div className="information-item">
                 <div className="info-inner">
                   <div className="right-icon">
                     <img src={icon4} alt="" />
@@ -82,13 +81,13 @@ export default function Home() {
                   <div className="icon">
                     <img src={icon4} alt="" />
                   </div>
-                  <h5 className="title">Date of Birth</h5>
-                  <span className="info">5 March 2001</span>
+                  <h5 className="title">{t("date_of_birth")}</h5>
+                  <span className="info">{t("dob")}</span>
                 </div>
               </div>
             </div>
             <div className="col-sm-6 col-xl-3">
-              <div className="information-item ">
+              <div className="information-item">
                 <div className="info-inner">
                   <div className="right-icon">
                     <img src={icon1} alt="" className="" />
@@ -96,13 +95,13 @@ export default function Home() {
                   <div className="icon">
                     <img src={icon1} alt="" className="" />
                   </div>
-                  <h5 className="title">Weight</h5>
-                  <span className="info">63kg / 139lb</span>
+                  <h5 className="title">{t("weight")}</h5>
+                  <span className="info">{t("weight_value")}</span>
                 </div>
               </div>
             </div>
             <div className="col-sm-6 col-xl-3">
-              <div className="information-item ">
+              <div className="information-item">
                 <div className="info-inner">
                   <div className="right-icon">
                     <img src={icon5} alt="" />
@@ -110,8 +109,8 @@ export default function Home() {
                   <div className="icon">
                     <img src={icon5} alt="" />
                   </div>
-                  <h5 className="title">Height</h5>
-                  <span className="info">171cm / 5'7"</span>
+                  <h5 className="title">{t("height")}</h5>
+                  <span className="info">{t("height_value")}</span>
                 </div>
               </div>
             </div>

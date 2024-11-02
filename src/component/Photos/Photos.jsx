@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "swiper/css";
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 
 import imgp2 from "../img/img-6.jpg";
 import imgp3 from "../img/img-17.jpg";
@@ -13,16 +13,18 @@ import imgp7 from "../img/img-12.jpg";
 import imgp8 from "../img/img-5.jpg";
 import imgp9 from "../img/img-11.jpg";
 import imgp10 from "../img/img-13.jpg";
-import imgp11 from "../img/img-15.jpg";
+
 import imgp12 from "../img/video-image.webp";
 import video2 from "../../assets/Download.mp4";
 import { useVideo } from "../../Layout/VideoContext";
 import { FaPlay, FaAngleUp } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import "../Photos/Photos.css";
 
 export default function Photos() {
   const { isVideoOpen, setIsVideoOpen } = useVideo();
   const videoRef = useRef(null);
+  const { t } = useTranslation();
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -125,7 +127,7 @@ export default function Photos() {
             <div className="col-md-4">
               <h2 className="title py-4">
                 <span className="font-s40">
-                  <span className="mainColor">GALLERY </span>
+                  <span className="mainColor">{t("gallery")}</span>
                 </span>
               </h2>
             </div>

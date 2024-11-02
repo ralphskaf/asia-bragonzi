@@ -1,19 +1,21 @@
 import React from "react";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
-import { CiInstagram } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <>
-      <footer className="text-center  bg-ff">
+      <footer className="text-center bg-ff">
         {/* Grid container */}
         <div className="container pt-4">
           {/* Section: Social media */}
-          <section className="mb-4 pos-f ">
+          <section className="mb-4 pos-f">
             <div>
-              <h1 className="pt-5">Follow Me</h1>
+              <h1 className="pt-5">{t("follow_me")}</h1>
               <div className="icon-container">
                 <Link
                   to="https://www.facebook.com/asiabragonzi11?mibextid=ZbWKwL"
@@ -64,15 +66,6 @@ export default function Footer() {
           </section>
         </div>
       </footer>
-      {/* <div className=' icoon pt-5  '>
-
-<i><FaFacebookF /></i>
-<i><FaTwitter /></i>
-<Link to="https://www.instagram.com/asiabragonzi__?igsh=MTJmN3hhNTljZnBidA==" className='li'>
-<i><CiInstagram /></i>
-
-</Link>
-</div> */}
     </>
   );
 }

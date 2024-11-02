@@ -1,0 +1,134 @@
+{
+  "hello": "CIAO!",
+  "its_me": "Sono Asia Bragonzi",
+  "my_career": "La Mia Carriera",
+  "place_of_birth": "Luogo di Nascita",
+  "date_of_birth": "Data di Nascita",
+  "weight": "Peso",
+  "height": "Altezza",
+  "italia": "Italia",
+  "dob": "5 Marzo 2001",
+  "weight_value": "63kg / 139lb",
+  "height_value": "171cm / 5'7\"",
+
+  "about_asia": "SU ASIA",
+  "biography": "Biografia",
+  "biography_text": "Sono un attaccante centrale molto attivo nelle azioni offensive della mia squadra e ho un notevole occhio per il gol, oltre a forti abilità nei calci di rigore. Grazie alle mie caratteristiche e al mio potenziale, sono considerato tra i migliori talenti italiani ed europei della mia generazione.",
+  "biography_details": "Asia Bragonzi, nata nel 2001 in Italia, è una calciatrice professionista che ha attirato l'attenzione per le sue abilità come attaccante. Iniziando la sua carriera con le squadre giovanili della Juventus, è poi passata a giocare per la squadra femminile senior, segnando cinque gol nelle sue prime apparizioni tra le stagioni 2018-2019 e 2019-2020. Dopo il suo periodo alla Juventus, è stata in prestito ad altri club, tra cui Hellas Verona, Empoli e Sampdoria. Nel suo recente periodo alla Sampdoria, Bragonzi ha segnato un gol decisivo in una partita contro la Juventus. Nel gennaio 2024, Asia è tornata alla Juventus, pronta a rafforzare la squadra sotto la guida dell'allenatore Joe Montemurro in mezzo a infortuni continui della squadra. Riporta sia esperienza che talento alla formazione della Juventus, riflettendo il suo impegno a evolversi come giocatrice e contribuire al calcio femminile italiano.",
+  "clubs": "Club",
+  "clubs_list": [
+    "Juventus F.C. Women (club attuale)",
+    "Inter Milan (squadra giovanile)",
+    "Hellas Verona",
+    "Empoli",
+    "Sassuolo"
+  ],
+
+  "history": "STORIA",
+  "int_career": "Carriera Internazionale",
+  "int_career_text": "Ho rappresentato l'Italia a vari livelli giovanili nel calcio internazionale.",
+  "int_career_details": [
+    {
+      "title": "Italia U19:",
+      "text": "Ho fatto parte della squadra nazionale italiana U19, dove ho avuto un impatto significativo in diverse competizioni. Sono stato riconosciuto per le mie capacità di segnare gol a questo livello, contribuendo alle prestazioni dell'Italia nei tornei giovanili."
+    },
+    {
+      "title": "Italia U23:",
+      "text": "Sono anche passato alla squadra italiana U23, continuando il mio sviluppo e rappresentando il mio paese a un livello superiore. Le mie prestazioni nei ranghi giovanili mi hanno reso un giocatore da tenere d'occhio per un potenziale inserimento nella squadra senior."
+    },
+    {
+      "title": "",
+      "text": "Al momento, non ho ancora fatto il mio debutto completo nella squadra nazionale senior italiana, ma rimango un talento promettente nel calcio italiano, con il potenziale per entrare nella squadra senior in futuro."
+    }
+  ],
+  "personal_life": "Vita Personale",
+  "personal_life_details": [
+    {
+      "title": "Supporto Familiare:",
+      "text": "Ho menzionato l'influenza della mia famiglia sulla mia carriera calcistica, in particolare mia madre, che inizialmente aveva delle riserve sul fatto che io perseguissi il calcio, ma alla fine è diventata la mia più grande sostenitrice."
+    },
+    {
+      "title": "Passione per il Calcio:",
+      "text": "Ho una profonda passione per il calcio e ho sottolineato che era l'unico sport che volevo perseguire, nonostante i tentativi di mia madre di introdurmi ad altre attività."
+    },
+    {
+      "title": "Presenza sui Social Media:",
+      "text": "Sono attivo sui social media, dove condivido scorci della mia vita, allenamenti e momenti con i compagni di squadra. Questa piattaforma spesso fornisce ai fan una visione più personale delle mie esperienze come giocatore."
+    }
+  ],
+  "club_career": "Carriera nei Club",
+  "club_career_details": [
+    {
+      "title": "Juventus (2018–2020):",
+      "text": "Ho iniziato la mia carriera professionale con la Juventus. Ho segnato cinque gol in otto presenze, contribuendo al successo della squadra."
+    },
+    {
+      "title": "Hellas Verona (2020–2021):",
+      "text": "Dopo la Juventus, mi sono trasferito all'Hellas Verona, dove ho trascorso una stagione per ottenere più tempo di gioco ed esperienza."
+    },
+    {
+      "title": "Sassuolo (2022):",
+      "text": "Ho avuto un breve periodo con il Sassuolo, acquisendo ulteriore esperienza nella massima serie."
+    },
+    {
+      "title": "Pomigliano (2023):",
+      "text": "Prima di unirmi alla Sampdoria, ho trascorso del tempo con il Pomigliano, continuando i miei progressi come attaccante efficace."
+    },
+    {
+      "title": "Sampdoria (2023):",
+      "text": "Il mio periodo alla Sampdoria è stato caratterizzato da un gol cruciale contro la Juventus alla fine del 2023."
+    },
+    {
+      "title": "Ritorno alla Juventus (2024):",
+      "text": "All'inizio del 2024, sono tornato alla Juventus, pronto a contribuire nuovamente al successo della squadra."
+    }
+  ],
+
+  "achievement": "RISULTATI",
+  "achievement_text_1": "Ha giocato 8 partite e segnato 5 gol durante il suo primo periodo (2018–2020). Ha contribuito al successo della squadra in Serie A, aiutando la Juventus a raggiungere le prime posizioni. Periodi di prestito:",
+  "achievement_text_2": "Hellas Verona (2020–2021): Ha acquisito esperienza essenziale in prima squadra. Empoli (2021–2022): Ha continuato il suo sviluppo come attaccante. Sassuolo (2022): Ha mostrato le sue abilità in Serie A con prestazioni incisive. Pomigliano (2023): Ha segnato gol e ha ulteriormente migliorato la sua esperienza in partita. Sampdoria (2023): Ha segnato un gol cruciale contro la Juventus, dimostrando la sua capacità di esibirsi in partite cruciali. Ritorno alla Juventus (2024):",
+  "matches": "Partite",
+  "goals": "Gol",
+
+  "gallery": "GALLERIA",
+
+  "skills": "ABILITÀ",
+  "pace": "Velocità",
+  "shooting": "Tiro",
+  "passing": "Passaggio",
+  "dribbling": "Dribbling",
+  "defending": "Difesa",
+  "physicality": "Fisicità",
+  "award": "PREMIO",
+  "award_1_title": "Campionato italiano | Juventus | 2018-2019, 2019-2020",
+  "award_1_text": "La Serie A femminile, ufficialmente chiamata Serie A femminile eBay per motivi di sponsorizzazione, è la massima divisione del campionato italiano di calcio femminile, nonché l'unica appartenente alla categoria professionistica, ed è gestita, dalla stagione 2018-2019, dalla Federazione Italiana Giuoco Calcio (FIGC). Dalla stagione 2022-2023",
+  "award_2_title": "Coppa Italia | Juventus | 2018-2019",
+  "award_2_text": "La Coppa Italia, ufficialmente chiamata Coppa Italia Ferrovie dello Stato Italiane per motivi di sponsorizzazione, è la coppa nazionale italiana di calcio riservata alle squadre di calcio femminile, che si svolge sotto l'egida della FIGC ed è organizzata annualmente dalla divisione calcio femminile della stessa FIGC",
+  "award_3_title": "Supercoppa italiana | Juventus | 2018-2019, 2022-2023",
+  "award_3_text": "La Supercoppa Italiana, ufficialmente chiamata Supercoppa Ferrovie dello Stato Italiane per motivi di sponsorizzazione, è una competizione di calcio femminile istituita nel 1997 che ogni anno mette in palio le prime due squadre della Serie A e le due finaliste della Coppa Italia in una fase finale con due semifinali e una finale su campo neutro.",
+  "award_4_title": "Individuale Golden Girl | Miglior italiana Under-21 | 2020",
+  "award_4_text": "La Golden Girl europea, spesso semplicemente chiamata Golden Girl, è un premio calcistico istituito da Tuttosport nel 2022 e assegnato ogni anno alla migliore calciatrice Under-21 che gioca nella massima serie di un campionato europeo. Dal 2018, il quotidiano torinese premia la migliore calciatrice italiana Under-21.",
+
+  "follow_me": "Seguimi",
+
+  "home": "Home",
+  "about": "Chi Siamo",
+  "header_achievement": "Risultati",
+  "media": "Media",
+  "header_skills": "Abilità",
+  "contact": "Contatto",
+  "language": "Lingua",
+  "english": "Inglese",
+  "italian": "Italiano",
+
+  "phone": "Telefono",
+  "address": "Indirizzo",
+  "contact_me": "CONTATTAMI",
+  "full_name": "Nome Completo",
+  "email": "Email",
+  "message": "Messaggio",
+  "sending": "Invio in corso...",
+  "send_message": "Invia Messaggio",
+  "success_message": "Il tuo messaggio è stato inviato con successo!",
+  "error_message": "Ops! Qualcosa è andato storto, per favore riprova."
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -9,6 +10,7 @@ const Navbar = () => {
   const [bgColor, setBgColor] = useState("transparent");
   const { isVideoOpen } = useVideo();
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -43,6 +45,21 @@ const Navbar = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const getCurrentLanguage = () => {
+    switch (i18n.language) {
+      case "en":
+        return t("english");
+      case "it":
+        return t("italian");
+      default:
+        return t("language");
+    }
+  };
 
   return (
     <nav
@@ -83,33 +100,63 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className="nav-link" exact to="/">
-                Home
+                {t("home")}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/about">
-                About
+                {t("about")}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/achievement">
-                Achievement
+                {t("header_achievement")}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/photos">
-                Media
+                {t("media")}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/skills">
-                Skills
+                {t("header_skills")}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact">
-                Contact
+                {t("contact")}
               </NavLink>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {getCurrentLanguage()}
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <button
+                    className="dropdown-item"
+                    onClick={() => changeLanguage("en")}
+                  >
+                    {t("english")}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="dropdown-item"
+                    onClick={() => changeLanguage("it")}
+                  >
+                    {t("italian")}
+                  </button>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

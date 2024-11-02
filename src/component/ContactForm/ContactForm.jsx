@@ -6,8 +6,11 @@ import "../ContactForm/ContactForm.css";
 import { FaAngleUp } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
+
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -38,7 +41,7 @@ export default function ContactForm() {
     axios
       .post("https://formspree.io/f/xzzbdrjv", formData)
       .then((response) => {
-        toast.success("Your message has been sent successfully!");
+        toast.success(t("success_message"));
         setFormData({
           name: "",
           email: "",
@@ -47,7 +50,7 @@ export default function ContactForm() {
         setIsSubmitting(false);
       })
       .catch((error) => {
-        toast.error("Oops! Something went wrong, please try again.");
+        toast.error(t("error_message"));
         setIsSubmitting(false);
       });
   };
@@ -68,7 +71,7 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="contact-info-content">
-                  <h6 className="title mx-4">Phone</h6>
+                  <h6 className="title mx-4">{t("phone")}</h6>
                   <ul>
                     <li>
                       <a href="tel:+393703415503" className="phone-link">
@@ -89,7 +92,7 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="contact-info-content">
-                  <h6 className="title mx-4">Address</h6>
+                  <h6 className="title mx-4">{t("address")}</h6>
                   <ul>
                     <li>Sassuolo Italy</li>
                   </ul>
@@ -107,7 +110,7 @@ export default function ContactForm() {
               <div className="col-md-4">
                 <h2 className="title py-4">
                   <span className="font-s40">
-                    <span className="mainColor">CONTACT ME</span>
+                    <span className="mainColor">{t("contact_me")}</span>
                   </span>
                 </h2>
               </div>
@@ -123,7 +126,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 name="name"
-                placeholder="full name"
+                placeholder={t("full_name")}
                 value={formData.name}
                 onChange={handleInputChange}
                 required
@@ -135,7 +138,7 @@ export default function ContactForm() {
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={t("email")}
                 value={formData.email}
                 onChange={handleInputChange}
                 required
@@ -148,7 +151,7 @@ export default function ContactForm() {
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                placeholder="Message"
+                placeholder={t("message")}
                 required
                 className="custom-placeholder"
               ></textarea>
@@ -159,7 +162,7 @@ export default function ContactForm() {
               disabled={isSubmitting}
               className="custom-button my-5"
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? t("sending") : t("send_message")}
             </button>
           </form>
         </div>

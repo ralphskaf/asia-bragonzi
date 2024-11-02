@@ -1,22 +1,21 @@
-import React, { useState } from "react";
-import img13 from "../img/img-4.png";
-import img14 from "../img/trophy-shape.png";
+import React from "react";
 import "../Achievement/style.css";
 import imgp4 from "../img/img-8.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function Achievement() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="">
         <div className="container">
-          {/* <div className="Achievement"> */}
           <div className="">
             <div className="row align-items-center">
               <div className="col-md-4">
                 <h2 className="title py-4 ">
                   <span className="font-s40">
-                    {/* <span className="relative-span mainColor">Achievement</span> */}
-                    <span className="mainColor">ACHIEVEMENT</span>
+                    <span className="mainColor">{t("achievement")}</span>
                   </span>
                 </h2>
               </div>
@@ -38,40 +37,23 @@ export default function Achievement() {
             </div>
             <div className="col-lg-6 ">
               <div className="content">
-                <p>
-                  Played 8 matches and scored 5 goals during her first stint
-                  (2018–2020). Contributed to the team's success in Serie A,
-                  aiding Juventus in securing top positions. Loan Spells:
-                </p>
-                <p>
-                  Hellas Verona (2020–2021): Gained essential first-team
-                  experience. Empoli (2021–2022): Continued her development as a
-                  forward. Sassuolo (2022): Showcased her skills in Serie A with
-                  impactful performances. Pomigliano (2023): Scored goals and
-                  further enhanced her match experience. Sampdoria (2023):
-                  Scored a pivotal goal against Juventus, demonstrating her
-                  ability to perform in crucial matches. Return to Juventus
-                  (2024):
-                </p>
+                <p>{t("achievement_text_1")}</p>
+                <p>{t("achievement_text_2")}</p>
               </div>
               <div className="counter-wrapper d-flex flex-wrap mb-1 mb-md-3">
                 <div className="counter-item">
                   <div className="counter-header">
                     <h2 className="title odometer fs-2">34</h2>
                   </div>
-
-                  <h4 className="subtitle">Matches</h4>
+                  <h4 className="subtitle">{t("matches")}</h4>
                 </div>
-
                 <div className="counter-item">
                   <div className="counter-header">
                     <h2 className="title odometer fs-2">2</h2>
                   </div>
-
-                  <h4 className="subtitle">Goals</h4>
+                  <h4 className="subtitle">{t("goals")}</h4>
                 </div>
               </div>
-
               <div></div>
             </div>
           </div>
