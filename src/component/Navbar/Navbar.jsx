@@ -39,6 +39,11 @@ const Navbar = () => {
     }
   }, [location]);
 
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <nav
       style={{
@@ -91,7 +96,6 @@ const Navbar = () => {
                 Achievement
               </NavLink>
             </li>
-
             <li className="nav-item">
               <NavLink className="nav-link" to="/photos">
                 Media

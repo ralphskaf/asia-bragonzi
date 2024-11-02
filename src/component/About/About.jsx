@@ -38,11 +38,11 @@ export default function About() {
               <div className="col-md-6 col-12">
                 <div className="content-text px-3">
                   <p>
-                    She is a center forward who is very active in the team's
-                    offensive actions and has a remarkable eye for goal, as well
-                    as good penalty-taking skills.Thanks to her characteristics
-                    and potential, she is considered among the best Italian and
-                    European talents of her generation.
+                    I am a center forward who is very active in my team's
+                    offensive actions and have a remarkable eye for goal, as
+                    well as strong penalty-taking skills. Thanks to my
+                    characteristics and potential, I am considered among the
+                    best Italian and European talents of my generation.
                   </p>
                 </div>
                 <div className="about-icons">
