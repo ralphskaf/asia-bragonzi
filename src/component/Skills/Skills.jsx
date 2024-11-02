@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Skills/Skills.css";
 import { FaAngleUp } from "react-icons/fa";
 import award from "../img/award.png";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 
 export default function Skills() {
   const { t } = useTranslation();
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Trigger the animation only once
+    threshold: 0.2, // Trigger when 10% of the component is in view
+  });
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -13,7 +18,7 @@ export default function Skills() {
 
   return (
     <>
-      <section className="container">
+      <section className="container" ref={ref}>
         <div className="skills">
           <div className="row align-items-center">
             <div className="col-md-4">
@@ -36,10 +41,10 @@ export default function Skills() {
             <span className="progress-label">69%</span>{" "}
             <div className="progress">
               <div
-                className="progress-bar bg-success"
+                className={`progress-bar bg-success ${inView ? "animate" : ""}`}
                 role="progressbar"
-                style={{ width: "69%" }}
-                aria-valuenow="90"
+                style={{ width: inView ? "69%" : "0%" }}
+                aria-valuenow="69"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -53,10 +58,10 @@ export default function Skills() {
             <span className="progress-label">60%</span>
             <div className="progress">
               <div
-                className="progress-bar "
+                className={`progress-bar ${inView ? "animate" : ""}`}
                 role="progressbar"
-                style={{ width: "60%" }}
-                aria-valuenow="80"
+                style={{ width: inView ? "60%" : "0%" }}
+                aria-valuenow="60"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -70,10 +75,10 @@ export default function Skills() {
             <span className="progress-label">67%</span>
             <div className="progress">
               <div
-                className="progress-bar "
+                className={`progress-bar ${inView ? "animate" : ""}`}
                 role="progressbar"
-                style={{ width: "67%" }}
-                aria-valuenow="70"
+                style={{ width: inView ? "67%" : "0%" }}
+                aria-valuenow="67"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -88,10 +93,10 @@ export default function Skills() {
             <span className="progress-label">66%</span>{" "}
             <div className="progress">
               <div
-                className="progress-bar bg-success"
+                className={`progress-bar bg-success ${inView ? "animate" : ""}`}
                 role="progressbar"
-                style={{ width: "66%" }}
-                aria-valuenow="90"
+                style={{ width: inView ? "66%" : "0%" }}
+                aria-valuenow="66"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -105,10 +110,10 @@ export default function Skills() {
             <span className="progress-label">30%</span>
             <div className="progress">
               <div
-                className="progress-bar "
+                className={`progress-bar ${inView ? "animate" : ""}`}
                 role="progressbar"
-                style={{ width: "30%" }}
-                aria-valuenow="80"
+                style={{ width: inView ? "30%" : "0%" }}
+                aria-valuenow="30"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -122,10 +127,10 @@ export default function Skills() {
             <span className="progress-label">62%</span>
             <div className="progress">
               <div
-                className="progress-bar "
+                className={`progress-bar ${inView ? "animate" : ""}`}
                 role="progressbar"
-                style={{ width: "62%" }}
-                aria-valuenow="70"
+                style={{ width: inView ? "62%" : "0%" }}
+                aria-valuenow="62"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
