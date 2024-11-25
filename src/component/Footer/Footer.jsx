@@ -50,7 +50,7 @@ export default function Footer() {
                     </i>
                   </div>
                 </Link>
-                <Link
+                {/* <Link
                   to="https://www.tiktok.com/@asiabragonzi?_t=8qsI6hZ0mX4&_r=1"
                   target="_blank"
                   className="icon-link"
@@ -60,7 +60,7 @@ export default function Footer() {
                       <FaTiktok />
                     </i>
                   </div>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </section>
