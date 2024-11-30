@@ -7,6 +7,7 @@ import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { VideoProvider } from "./Layout/VideoContext";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -19,6 +20,7 @@ function App() {
   }, []);
   return (
     <>
+      <Analytics />
       <VideoProvider>
         <RouterProvider router={router} />
       </VideoProvider>
